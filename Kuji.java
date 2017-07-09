@@ -2,14 +2,13 @@ import java.util.Random;
 
 class Kuji{
     int type;
-    String[] typeStr = { "大吉", "中吉", "凶"};
+    String[] typeStr = { "大吉", "中吉", "凶", "中井りかちゃん"};
     
     void shuffle(){
         Random rnd = new Random();
         this.type = rnd.nextInt(typeStr.length);
-        //System.out.println(this.type);
     }
-    String display() {
-        return "大吉";
+    String getResult() {
+        return this.typeStr[this.type];
     }
 }
