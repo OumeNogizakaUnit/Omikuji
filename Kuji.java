@@ -5,6 +5,11 @@ class Kuji{
     String[] typeStr = { "大吉", "中吉", "凶"};
     
     void shuffle(){
-        this.type = 1;
+        Random rnd = new Random();
+        this.type = rnd.nextInt(typeStr.length);
+        
+        //System.out.println(this.type);
     }
+    
+    
 }
