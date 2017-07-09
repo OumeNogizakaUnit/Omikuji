@@ -7,9 +7,9 @@ class Kuji{
     void shuffle(){
         Random rnd = new Random();
         this.type = rnd.nextInt(typeStr.length);
-        
         //System.out.println(this.type);
     }
-    
-    
+    String display() {
+        return "大吉";
+    }
 }
