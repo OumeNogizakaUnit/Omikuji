@@ -1,3 +1,7 @@
+/**
+* -*- coding: utf-8 -*-
+* vi: set expandtab sw=4 ts=4 :
+*/
 import java.util.Random;
 
 class Kuji{
