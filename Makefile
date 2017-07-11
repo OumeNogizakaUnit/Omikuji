@@ -10,3 +10,6 @@ KujiMain.class: KujiMain.java Kuji.class
 Kuji.class: Kuji.java
 	javac -encoding UTF-8 Kuji.java
 
+.PHONY: run
+run: KujiMain.class
+	java KujiMain
