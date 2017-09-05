@@ -4,15 +4,15 @@
 */
 import java.util.Random;
 
-class Kuji{
+public class Kuji{
     int type;
     String[] typeStr = { "大吉", "中吉", "凶", "中井りかちゃん"};
     
-    void shuffle(){
+    public void shuffle(){
         Random rnd = new Random();
         this.type = rnd.nextInt(typeStr.length);
     }
-    String getResult() {
+    public String getResult() {
         return this.typeStr[this.type];
     }
 }
