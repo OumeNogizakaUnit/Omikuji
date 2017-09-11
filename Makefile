@@ -10,9 +10,13 @@ Kuji.class: Kuji.java
 	javac -encoding UTF-8 Kuji.java
 
 .PHONY: run
-run: 
+run: KujiMain.class
 	java KujiMain
 
 .PHONY: test
 test:
 	javac -encoding UTF-8 *Test.java
+
+.PHONY: clear
+clear:
+	rm *.class
